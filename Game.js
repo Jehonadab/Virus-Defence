@@ -56,7 +56,7 @@ $(document).ready(function() {
 		var distance = Math.sqrt(((bx-curX)*(bx-curX))+((by-curY)*(by-curY)));
 		var xdis = (bx/distance) * 2;
 		var ydis = (by/distance) * 2;
-		var interval = setInterval(function() {move(bullet, xdis, ydis)}, 10);
+		var interval = setInterval(function() {move(bullet, xdis, ydis);}, 10);
 	}); 
 
 
@@ -74,12 +74,12 @@ $(document).ready(function() {
 			}
 			if (keys[65]) { //Left Arroww
 				if (player.position().left - dx > -2){
-					player.css('left', player.position().left - dx)
+					player.css('left', player.position().left - dx);
 				}
 			}
 			if (keys[68]) { //Right Arrow
 				if (player.position().left + dx < WIDTH -40){
-					player.css('left', player.position().left + dx)
+					player.css('left', player.position().left + dx);
 				}
 			}
 			setTimeout(doKeyDown, 10);
