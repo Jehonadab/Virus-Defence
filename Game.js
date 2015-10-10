@@ -24,31 +24,31 @@ $(document).ready(function() {
 		bullet.css("left", bullet.position().left - x);
 			if (bullet.position().top < -2) {
 				bullet.remove();
-				clearInterval(stop);
+				clearInterval(interval);
 			}
 			if (bullet.position().left < -2) {
 				bullet.remove();
-				clearInterval(stop);
+				clearInterval(interval);
 			}
 			if (bullet.position().top > 595) {
 				bullet.remove();
-				clearInterval(stop);
+				clearInterval(interval);
 			}
 			if (bullet.position().left > 795) {
 				bullet.remove();
-				clearInterval(stop);
+				clearInterval(interval);
 			}
 	}
 
 	document.getElementById("Main").addEventListener("click", function(e) {
-		curX = e.clientX;
+		curX = e.clientX - $("#Main").offset().left;
 		curY = e.clientY;
 		$("#Main").append('<div class = "Bullet"></div>');
 		var bullet = $(".Bullet").last();
 		bullet.css('top', player.position().top + 18);
 		bullet.css('left', player.position().left + 18);
-		var bt = bullet.position().top + 15;
-		var bl = bullet.position().left + 15;
+		var bt = bullet.position().top + 10;
+		var bl = bullet.position().left + 10;
 		var bx = bl - curX;
 		var by = bt - curY;
 		var slope = by/bx;
