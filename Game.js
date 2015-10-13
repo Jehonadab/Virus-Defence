@@ -11,6 +11,7 @@ $(document).ready(function() {
 	var stop;
 	var velx;
 	var vely;
+	var interval;
 
 	window.addEventListener('keydown',function(e) {
 		keys [e.which] = true;
@@ -84,10 +85,10 @@ $(document).ready(function() {
 			setTimeout(doKeyDown, 10);
 	}
 
-	document.getElementById("button-red").onclick = Spawn;
-	function Spawn(){
-		$("#Main").append('<div class = "Enemy"></div>');
-	}
+	//document.getElementById("button-red").onclick = Spawn;
+	//function Spawn(){
+		//$("#Main").append('<div class = "Enemy"></div>');
+	//}
 
 
 	doKeyDown();

@@ -50,6 +50,6 @@ body {
 	height: 45px;
 	border-radius: 50%;
 	background-color: #7CFC00;
-	left: random(500px, 600px);
-	top: random(500px, 600px);
+	left: 20px;
+	top: 20px;
 }
