@@ -11,6 +11,8 @@ $(document).ready(function() {
 	var stop;
 	var velx;
 	var vely;
+	var interval;
+	var wavCount;
 
 	window.addEventListener('keydown',function(e) {
 		keys [e.which] = true;
@@ -84,6 +86,10 @@ $(document).ready(function() {
 			setTimeout(doKeyDown, 10);
 	}
 
+	//document.getElementById("button-red").onclick = Spawn;
+	//function Spawn(){
+		//$("#Main").append('<div class = "Enemy"></div>');
+	//}
 
 
 	doKeyDown();

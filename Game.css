@@ -12,23 +12,13 @@ body {
 }
 
 #Player {
-        position: absolute;
-        width: 46px;
-        height: 46px;
-        background-color: lightgray;
-        border-radius: 50%;
-        left: 360px;
-        top: 280px;
-}
-
-#Enemy {
-        position: absolute;
-        width: 35px;
-        height: 35px;
-        background-color: blue;
-        border-radius: 50%;
-        left: 0px;
-        top: 0px;
+	position: absolute;
+	width: 46px;
+	height: 46px;
+	background-color: #F5F5F5;
+	border-radius: 50%;
+	left: 360px;
+	top: 280px;
 }
 
 #Comment {
@@ -52,4 +42,14 @@ body {
 #Title {
         position: relative;
         margin: 0;
+}
+
+.Enemy {
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: #7CFC00;
+	left: 20px;
+	top: 20px;
 }
