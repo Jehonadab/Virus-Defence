@@ -1,14 +1,14 @@
 body {
-	background-color: #336699;
+        background-color: #336699;
 }
 
 #Main {
-	position: relative;
-	width: 800px;
-	height: 600px;
-	background-color: #666666;
-	border: 2px solid black;
-	margin: 0 auto;
+        position: relative;
+        width: 800px;
+        height: 600px;
+        background-color: #666666;
+        border: 2px solid black;
+        margin: 0 auto;
 }
 
 #Player {
@@ -22,26 +22,26 @@ body {
 }
 
 #Comment {
-	position: absolute;
-	width: 200px;
-	height: 200px;
-	background-color: white;
-	border-radius: 3px;
-	border: 3px solid black;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border-radius: 3px;
+        border: 3px solid black;
 }
 
 .Bullet {
-	position: absolute;
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background-color: red;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: red;
 	
 }
 
 #Title {
-	position: relative;
-	margin: 0;
+        position: relative;
+        margin: 0;
 }
 
 .Enemy {

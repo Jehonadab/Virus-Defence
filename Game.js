@@ -12,6 +12,7 @@ $(document).ready(function() {
 	var velx;
 	var vely;
 	var interval;
+	var wavCount;
 
 	window.addEventListener('keydown',function(e) {
 		keys [e.which] = true;
